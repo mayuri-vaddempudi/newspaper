@@ -1,0 +1,9 @@
+.mediaContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.icon {
+    height: 32px;
+    width: 32px;
+}

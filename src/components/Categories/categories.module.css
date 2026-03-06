@@ -1,0 +1,16 @@
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.category > div {
+    flex: 0 1 calc(33% - 16px * 2 / 3);
+}
+
+h3 {
+    flex: 0 0 100%;
+}
+

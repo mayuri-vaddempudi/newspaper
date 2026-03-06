@@ -1,0 +1,13 @@
+:local(.article) {
+    padding: 24px 0;
+    border-bottom: 1px solid #333;
+}
+
+.headline {
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.category {
+    text-align: right;
+}
