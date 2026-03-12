@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
-
 .header {
     align-items: center;
     display: flex;
@@ -11,4 +10,17 @@
     font-size: 6rem;
     margin: 0;
     text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .headerTitle {
+        flex: 1 0 100%;
+        font-size: 3.5rem;
+        order: 1;
+        text-align: center;
+    }
 }

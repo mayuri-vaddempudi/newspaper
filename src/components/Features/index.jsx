@@ -5,12 +5,12 @@ import Sports from '../Sports'
 
 import {mainArticle} from '../../data/data'
 
-const Features = () => {
+const Features = ({updateFunction}) => {
     return (
         <div className={styles.features}>
-            <Recent />
-            <MainArticle {...mainArticle} />
-            <Sports />
+            <Recent setArticle={updateFunction} />
+            <MainArticle article={mainArticle} setArticle={updateFunction} />
+            <Sports setArticle={updateFunction} />
         </div>
     )
 }

@@ -1,11 +1,19 @@
 import styles from './article.module.css'
 import {getImageURL} from '../../utils/functions'
 
-const ArticleWithImage = ({headline, deck, category, image}) => {
+const ArticleWithImage = ({content, setArticle}) => {
+    let {headline, deck, category, image} = content;
+
+    const handleClick = () => {
+        setArticle(content)
+    }
+    
     return (
-        <div className={styles.article}>
+        <div onClick={handleClick} className={styles.article}>
             {image && <img src={getImageURL(image)} height="auto" width="100%" />}
-            <div className={styles.headline}>{headline}. {deck}</div>
+            <div className={styles.headline}>{headline}. 
+                <span className={styles.deck}>{deck}</span>
+            </div>
             <div className={styles.category}>{category}</div>
         </div>
     )

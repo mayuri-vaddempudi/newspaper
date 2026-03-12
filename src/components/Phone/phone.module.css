@@ -5,3 +5,10 @@
     height: 32px;
     padding: 4px;
 }
+
+@media screen and (max-width: 768px) {
+    .phone {
+        margin: 16px 0;
+        order: 3;
+    }
+}

@@ -1,8 +1,14 @@
 import styles from './article.module.css'
 
-const ArticleWithoutImage = ({headline, deck, category}) => {
+const ArticleWithoutImage = ({content, updateFunction}) => {
+    let {headline, deck, category} = content;
+
+    const handleClick = () => {
+        updateFunction(content)
+    }
+    
     return (
-        <div className={styles.article}>
+        <div onClick = {handleClick} className={styles.article}>
             <div className={styles.headline}>{headline}. {deck}</div>
             <div className={styles.category}>{category}</div>
         </div>
